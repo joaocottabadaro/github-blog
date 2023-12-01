@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --primary: #3294F8;
+    --base-title: #E7EDF4;
+    --base-subtitle: #C4D4E3;
+    --base-text: #AFC2D4;
+    --base-span: #7B96B2;
+    --base-label: #3A536B;
+    --base-border: #1C2F41;
+    --base-post: #112131;
+    --base-profile: #0B1B2B;
+    --base-background: #071422;
+    --base-input: #040F1A;
+
+
+    --radius: 6px;
+
+
+
+  }
+
+  :focus {
+    outline: 0;
+
+    box-shadow: 0 0 0 2px var(--primary);
+  }
+
+  body {
+    background-color: var(--base-background);
+    color: var(--base-text);
+  }
+
+  body,
+  input,
+  textarea,
+  button {
+    font: 400 1rem 'Source Code Pro', 'monospace';
+    line-height: 160%;
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
